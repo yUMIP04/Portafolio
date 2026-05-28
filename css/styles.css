@@ -58,3 +58,41 @@ body{
 .item:hover{
     color: rgba(255, 255, 255, 0.9);
 }
+
+/*🌟SECCION: SOBRE MI */
+
+.info-aboutME{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+   align-items: center;
+    
+}
+
+
+@keyframes giro-moneda{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.profile-picture{
+    perspective: 800px;
+}
+
+.profile-picture img{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 230px;
+    height: 290px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-picture img:hover{
+    animation: giro-moneda 1s ease-in-out;
+}
