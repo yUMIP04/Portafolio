@@ -156,3 +156,42 @@ body{
         box-shadow:0 0 10px rgba(142, 43, 194, 0.4);
     }
 }
+
+/*APARTADO SKILLS */
+
+.skills{
+    width: 90%;
+    margin: 60ppx auto;
+}
+
+.titulo-skills h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.skils{
+    display: flex;
+    flex-direction: column;
+}
+
+.skils{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.habilidad-frontend, .habilidad-backend, .Herramientas{
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08) ;
+    border-radius: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
