@@ -420,3 +420,34 @@ margin-bottom: 5%;
     box-shadow: 0 10px 30px rgba(142, 43, 194, 0.15);
     border-color: rgba(142, 43, 194, 0.3);
 }
+
+/*Proyecto 2 */
+
+.seg{
+    background-image: url(/assets/img/CotizacionesConsultancy.png);
+}
+
+/*Proyecto 3 */
+
+.three{
+    background-image: url(/assets/img/CotizacionesLumisa.png);
+}
+
+.tech-proyect {
+   width: 90%;
+   height: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.tech-proyect a i{
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-proyect a i:hover{
+    color: #A855F7;
+    transform: scale(1.15);
+}
