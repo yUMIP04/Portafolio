@@ -451,3 +451,46 @@ margin-bottom: 5%;
     color: #A855F7;
     transform: scale(1.15);
 }
+
+/*MODALES DE LOS PROYECTOS */
+
+.modal{
+position: fixed;
+width: 100%;
+height: 100%;
+background-color:rgba(0, 0, 0, 0.4);
+ top: 0;
+ left: 0;
+ z-index: 5000;  
+ display: none; 
+ justify-content: center;
+ align-items: center;
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-cerrar{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+  
+}
+
+.contenido-modal{
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 990px;
+    height: 70%;
+    max-width: 800px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal.active{
+    display: flex;
+}
