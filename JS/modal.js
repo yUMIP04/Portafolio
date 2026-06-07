@@ -27,3 +27,7 @@ function Open_Modal(btn_proyect, modal, btn_cerrar){
 
 Open_Modal(Proyecto1, Modal, btn_Cerrar);
 
+
+/*Imagenes en modal */
+
+const ImagenesData = ["/assets/img/inicioSesion_MVLS.png", "/assets/img/MVLS-videollamada.png"];
