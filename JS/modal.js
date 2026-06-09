@@ -1,82 +1,117 @@
 console.log("El JS del modal si funciona");
 
-const Proyecto1 = document.querySelector(".one");
-const Proyecto2 = document.querySelector(".two");
-
 const Modal = document.querySelector(".modal");
 const btn_Cerrar = document.querySelector(".btn-cerrar");
-
-function Open_Modal(btn_proyect, modal, btn_cerrar){
-
-    if(btn_proyect && modal && btn_cerrar){
-
-    
-    btn_proyect.addEventListener("click", (e) =>{
-
-        modal.classList.add("active");
-
-        btn_cerrar.addEventListener("click", (e) =>{
-            
-            modal.classList.remove("active");
-    })
-
-    })
-
-    } else{
-        console.log("Hubo un error");
-    }
-}
-
-Open_Modal(Proyecto1, Modal, btn_Cerrar);
-Open_Modal(Proyecto2, Modal, btn_Cerrar );
-
-/*Imagenes en modal */
-
-const ImagenesDataMVLS = ["/assets/img/inicioSesion_MVLS.png", "/assets/img/MVLS-videollamada.png", "/assets/img/MVLS-Videollamada2.png"];
-const ImagenesConsultancy = []
 const btn_izquierda = document.querySelector(".btn-izquierda");
 const btn_derecha = document.querySelector(".btn-derecha");
-const contenido_imgen = document.querySelector(".contenido-modal");
+const contenido_imgen = document.getElementById("visor-imagenes");
+
+
+const Proyecto1 = document.querySelector(".one");
+const Proyecto2 = document.querySelector(".two");
+const Proyecto3 = document.querySelector(".three");
+
+const ImagenesDataMVLS = [
+    "/assets/img/inicioSesion_MVLS.png", 
+    "/assets/img/MVLS-videollamada.png", 
+    "/assets/img/MVLS-Videollamada2.png"
+];
+
+const Consultancy = [
+    "/assets/img/CotizacionContable1.png", "/assets/img/CotizacionContable2.png", "/assets/img/CotizacionContable3.png", 
+    "/assets/img/CotizacionContable4.png", "/assets/img/CotizacionesConsultancy.png", "/assets/img/InicioConsultancy.png",
+    "/assets/img/InicioSesionConsultancy.png", "/assets/img/pdf_consultancy1.png", "/assets/img/pdf_consultancy3.png",
+    "/assets/img/pdf_consultancy2.png", "/assets/img/pdf_consultancy4.png", "/assets/img/pdf_consultancy6.png",
+    "/assets/img/paneladmin_Consultancy.png", "/assets/img/HistorialConsultancy.png"
+];
+
+const Lumisa = [
+    "/assets/img/LumisaInicioSesion.png", "/assets/img/CotizacionesLumisa.png", "/assets/img/CotizacionLumisa.png",
+    "/assets/img/CotizacionLumisa2.png","/assets/img/pdf_Lumisa.png", "/assets/img/pdfLumisa2.png", "/assets/img/HistorialLumisa.png",
+    "/assets/img/panel_adminLumisa.png"
+]
 
 let index = 0;
+let ImagenesActuales = [];
 
-function Recorrer_Imagenes(imagenes, contenido){
+function Recorrer_Imagenes(contenido){
 
     if(contenido){
-        contenido.style.background = `url(${imagenes[index]})`;
-    }
 
+    
+    contenido.style.backgroundImage = `url(${ImagenesActuales[index]})`;
+}
 }
 
-function Cambiar_imagen(button_derecho, button_izquierdo, imagenes){
+function Cierrer_AperturaModal (btn_proyecto, modal, btn_cerrar){
 
-    if(button_derecho){
+    if(btn_proyecto && modal  && btn_cerrar){
 
-        button_derecho.addEventListener("click", (e) => {
+        btn_proyecto.addEventListener("click", (e) =>{
+            modal.classList.add("active");
+        });
+
+        btn_cerrar.addEventListener("click", (e) =>{
+            modal.classList.remove("active");
+        })
+    } else{
+        console.log("Faltan elementos para el modal");
+    }
+}
+
+function Abrir_Modal(btn_Derecho, btn_izquierdo){
+
+    if(btn_Derecho){
+
+        btn_Derecho.addEventListener("click", (e) =>{
             index ++;
 
-            if(index >= imagenes.length){
+            if (index >= ImagenesActuales.length){
+
                 index = 0;
             }
-
-             Recorrer_Imagenes(ImagenesDataMVLS, contenido_imgen);
-        })
+            Recorrer_Imagenes(contenido_imgen);
+        });
     }
 
-    if(button_izquierdo){
+    if(btn_izquierdo){
+        btn_izquierdo.addEventListener("click", (e) =>{
+            index --;
 
-        button_izquierdo.addEventListener("click", (e) =>{
-           index --;
+            if(index < 0){
+                index = ImagenesActuales.length - 1;
+            }
 
-           if(index < 0){
-
-            index  = imagenes.length - 1;
-           }
-
-            Recorrer_Imagenes(ImagenesDataMVLS, contenido_imgen);
-        })
+            Recorrer_Imagenes(contenido_imgen);
+        });
     }
 }
 
-Cambiar_imagen(btn_derecha, btn_izquierda, ImagenesDataMVLS);
+Abrir_Modal(btn_derecha, btn_izquierda);
+Cierrer_AperturaModal(Proyecto1, Modal, btn_Cerrar);
+Cierrer_AperturaModal(Proyecto2, Modal, btn_Cerrar);
+Cierrer_AperturaModal(Proyecto3, Modal, btn_Cerrar );
 
+if(Proyecto1){
+    Proyecto1.addEventListener("click", (e) =>{
+        index = 0;
+        ImagenesActuales = ImagenesDataMVLS;
+        Recorrer_Imagenes(contenido_imgen);
+    });
+}
+
+if(Proyecto2){
+    Proyecto2.addEventListener("click", (e) =>{
+        index = 0;
+        ImagenesActuales= Consultancy;
+        Recorrer_Imagenes(contenido_imgen);
+    });
+}
+
+if(Proyecto3){
+    Proyecto3.addEventListener("click", (e) =>{
+        index = 0;
+        ImagenesActuales = Lumisa;
+        Recorrer_Imagenes(contenido_imgen);
+    });
+}
