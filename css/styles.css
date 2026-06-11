@@ -452,6 +452,91 @@ margin-bottom: 5%;
     transform: scale(1.15);
 }
 
+/*Seccion Contacto */
+.contacto{
+    margin-top: 5%;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+}
+
+.contacto-container{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.05) ;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.08);
+    
+}
+
+.subtitulo-contacto{
+     font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactar{
+margin-top: 5%;
+}
+
+#contactar{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactar .email{
+    border-style: solid;
+    border-radius: 5px;
+   padding-top: 2%;
+    width: 50%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#contactar textarea{
+          border-style: solid;
+    border-radius: 5px;
+    width: 50%;
+    height: 5vw;
+}
+
+
+#contactar textarea:focus{
+     outline: 3px solid  rgba(255, 255, 255, 0.7)
+}
+
+.btn{
+    margin-top: 5%;
+}
+
+.btn-enviar{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    background-color:  #A855F7;
+    border-color: rgba(255, 255, 255, 0.08) ;
+    cursor: pointer;
+     font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.btn-enviar:hover{
+box-shadow:4px 4px 10px  rgba(0, 0, 0, 0.3);
+transition: 0.3s;
+}
 /*MODALES DE LOS PROYECTOS */
 
 .modal{
