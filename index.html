@@ -70,6 +70,31 @@
 
     </section>
 
+    <!--REDES SOCIALES-->
+
+    <section class="redes-sociales">
+    <div class="titulo-redes">
+        <h2>🌐 Mis Redes Profesionales</h2>
+         <hr class="barra-redes"> 
+    </div>
+
+    <div class="redes-container">
+        <a href="https://www.linkedin.com/in/victoria-laney-perez-ramirez-b5b37b389/" target="_blank" class="redes-item linkedin">
+            <i class="devicon-linkedin-plain"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/yUMIP04" target="_blank" class="redes-item github">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+        </a>
+
+        <a href="https://profile.indeed.com/?hl=es_MX&co=MX&from=gnav-homepage" target="_blank" class="redes-item indeed">
+            <i class="devicon-chrome-javascript"></i> <span>Indeed</span>
+        </a>
+    </div>
+</section>
+
     <!--SKILLS-->
 
    <section id="skills">
@@ -314,21 +339,22 @@
     <div class="contacto-container">
 
         <div class="subtitulo-contacto">
-        <h3>🗣️Hablemos ¡Estoy interesada en conocerlos!</h3>
+        <h3>🗣️ Hablemos ¡Estoy interesada en conocerlos!</h3>
         </div>
 
-        <div class="contactar">
-            <form id="contactar" action="" method="post">
-                <label for="correo">Correo:</label>
-                <input type="email" class="email" name="email" id="email">
-                <label for="mensaje">Mensaje de texto:</label>
-                <textarea name="" id=""></textarea>
+       <div class="contactar">
+    <form id="contactar" action="https://formspree.io/f/xqeoylwr" method="post">
+        <label for="email">Correo:</label>
+        <input type="email" class="email" name="email" id="email" required>
+        
+        <label for="mensaje">Mensaje de texto:</label>
+        <textarea name="mensaje" id="mensaje" required></textarea>
 
-                <div class="btn">
-                    <input class="btn-enviar" type="submit" value="Enviar">
-                </div>
-            </form>
+        <div class="btn">
+            <input class="btn-enviar" type="submit" value="Enviar">
         </div>
+    </form>
+</div>
     </div>
 
 </section>
@@ -365,5 +391,6 @@
 
 <script src="/JS/nav.js"></script>
 <script src="/JS/modal.js"></script>
+
 
 </html>

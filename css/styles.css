@@ -170,6 +170,96 @@ body{
     }
 }
 
+/*APARTADO DE REDES SOCIALES */
+
+.redes-sociales {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-redes {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.titulo-redes h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+.redes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+.redes-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 25px 15px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+
+.redes-item i {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.redes-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.redes-item:hover {
+    transform: translateY(-8px); 
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #A855F7; 
+    color: white;
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.2); 
+}
+
+
+.redes-item.linkedin:hover i {
+    color: #0A66C2; 
+}
+
+.redes-item.github:hover i {
+    color: #F0F6FC; 
+}
+
+.redes-item.indeed:hover i {
+    color: #2164E8;
+}
+
+.barra-redes{
+ background: linear-gradient(90deg, #8E2BC2, #A855F7);
+    width: 105%;
+    height: 5px;
+    border-style: none;
+    border-radius: 10px;
+}
 /*APARTADO SKILLS */
 
 #skills {
@@ -494,49 +584,62 @@ margin-top: 5%;
 }
 
 #contactar .email{
-    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.1);  
     border-radius: 5px;
-   padding-top: 2%;
+    padding-top: 10px;  
+    padding-bottom: 10px;
     width: 50%;
     margin-bottom: 5%;
     text-align: center;
+    color: white;      
+    font-family: 'Poppins', sans-serif;
 }
 
 #contactar textarea{
-          border-style: solid;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     width: 50%;
-    height: 5vw;
+    height: 120px;        
+    color: white;        
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    resize: vertical;    
 }
 
 
-#contactar textarea:focus{
-     outline: 3px solid  rgba(255, 255, 255, 0.7)
+#contactar label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.btn{
+.btn {
     margin-top: 5%;
 }
 
-.btn-enviar{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.btn-enviar {
+    padding: 10px 30px; 
     border-radius: 5px;
-    border-style: solid;
-    color: white;
-    background-color:  #A855F7;
-    border-color: rgba(255, 255, 255, 0.08) ;
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    background-color: #A855F7;
     cursor: pointer;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.btn-enviar:hover{
-box-shadow:4px 4px 10px  rgba(0, 0, 0, 0.3);
-transition: 0.3s;
+.btn-enviar:hover {
+    background-color: #9333EA;
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3); 
 }
+
+
+.btn-enviar:active {
+    transform: scale(0.97); 
+}
+
 /*MODALES DE LOS PROYECTOS */
 
 .modal{
