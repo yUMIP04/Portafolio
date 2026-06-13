@@ -170,6 +170,166 @@ body{
     }
 }
 
+/* SECCIÓN SOBRE MÍ 2.2  */
+.aboutME-two {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+.card-profile-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px; 
+    width: 100%;
+    max-width: 950px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+.img-profile-two {
+    flex-shrink: 0; 
+    width: 250px;
+    height: 250px;
+    border-radius: 20%; 
+    overflow: hidden;
+    border: 3px solid rgba(168, 85, 247, 0.4); 
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.img-profile-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.img-profile-two:hover {
+    transform: scale(1.03);
+    border-color: #A855F7; 
+}
+
+
+.info-profile-two {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.info-profile-two p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+
+.info-profile-two strong {
+    color: white;
+    font-weight: 600;
+}
+
+
+.frase-final {
+    margin: 15px 0 0 0;
+    padding-left: 15px;
+    border-left: 4px solid #A855F7;
+    font-style: italic;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(168, 85, 247, 0.05); 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0 8px 8px 0;
+}
+
+.dowlad-CV {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%;
+}
+
+.dowlad-CV a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    padding: 12px 28px;
+    background-color: rgba(168, 85, 247, 0.08);
+    border: 2px solid #A855F7;                
+    border-radius: 8px;
+    
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+
+.dowlad-CV a i {
+    font-size: 1.2rem;
+}
+
+.dowlad-CV a:hover {
+    background-color: #A855F7;
+    color: white;
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.4); 
+    transform: translateY(-2px); 
+}
+
+
+.dowlad-CV a:active {
+    transform: translateY(0) scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+    .card-profile-two {
+        flex-direction: column; 
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .img-profile-two {
+        width: 180px;
+        height: 180px; 
+    }
+
+    .frase-final {
+        border-left: none;
+        border-top: 3px solid #A855F7; 
+        border-radius: 0 0 8px 8px;
+        padding-left: 0;
+        padding-top: 12px;
+    }
+
+    .dowlad-CV {
+        justify-content: center; 
+        margin-top: 25px;
+    }
+    
+    .dowlad-CV a {
+        width: 80%; 
+    }
+}
+
+
+
 /*APARTADO DE REDES SOCIALES */
 
 .redes-sociales {
@@ -299,7 +459,7 @@ body{
 
 .skils{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 35px;
     width: 100%;
     align-items: stretch;
@@ -414,7 +574,7 @@ body{
 
 .mis-proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 460px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 460px));
     gap: 40px; 
     justify-content: center; 
     width: 100%;
@@ -552,7 +712,8 @@ margin-bottom: 5%;
 }
 
 .contacto-container{
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     background-color: rgba(255, 255, 255, 0.05) ;
     border-radius: 10px;
     border-style: solid;
@@ -589,7 +750,7 @@ margin-top: 5%;
     border-radius: 5px;
     padding-top: 10px;  
     padding-bottom: 10px;
-    width: 50%;
+    width: 80%;
     margin-bottom: 5%;
     text-align: center;
     color: white;      
@@ -600,7 +761,7 @@ margin-top: 5%;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    width: 50%;
+    width: 80%;
     height: 120px;        
     color: white;        
     font-family: 'Poppins', sans-serif;
@@ -667,11 +828,17 @@ background-color:rgba(0, 0, 0, 0.4);
 }
 
 .btns{
-    display: flex;
-    text-align: right;
+   display: flex;
+    justify-content: space-between; 
+    align-items: center;
     width: 100%;
-    height: 50%;
-    gap: 770px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    pointer-events: none; 
 }
 
 .btn-derecha, .btn-izquierda{
@@ -680,6 +847,7 @@ background-color:rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 2.5rem;
     cursor: pointer;
+    pointer-events: auto;
  }
 
 .contenido-modal{
@@ -689,16 +857,74 @@ background-color:rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 15px;
-    width: 990px;
+    width: 90%;
     height: 60%;
-    max-width: 900px;
+    max-width: 850px;
+    height: 55vh;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     gap: 15px;
+    justify-content: space-between;
+    position: relative;
     
 }
 
 .modal.active{
     display: flex;
+}
+
+@media (max-width: 768px) {
+    
+    /* Navbar adaptable */
+    .nav {
+        width: 95%;
+        padding: 4% 2%;
+    }
+    
+    .navigation {
+        width: 90%; 
+    }
+
+    /* Primera sección Sobre Mí */
+    .info-aboutME {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        margin-top: 15%;
+        padding: 0 20px;
+    }
+
+    .description-aboutME p {
+        text-align: center; 
+    }
+
+    /* Título de Skills adaptable */
+    .titulo-skills h1::after {
+        width: 80%; 
+    }
+
+    /* Sección Redes Sociales */
+    .redes-container {
+        flex-wrap: wrap; 
+        gap: 15px;
+    }
+
+    .redes-item {
+        width: 45%;
+        padding: 15px 10px;
+    }
+
+    /* Sección Contacto */
+    .contacto {
+        padding: 0 20px;
+    }
+    
+    .contacto-container {
+        width: 100%;
+    }
+
+    #contactar .email, #contactar textarea {
+        width: 90%; 
+    }
 }
