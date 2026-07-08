@@ -102,18 +102,50 @@ body{
 }
 
 .info-personal, strong, p{
-    font-family: 'Geist Pixel';
+    font-family: 'Geist Pixel', sans-serif;
     font-size: 0.7rem;
     margin-left: 3%;
+    line-height: 1.6;
 }
 
 .info-work{
     width: 40vw;
     margin-right: 2%;
     margin-top: 2%;
+    display: block;
+    
 }
 
 .title-info, h1{
-
+    font-family: 'Geist Pixel', sans-serif;
    text-align: justify;
+   color: white;
+}
+
+.barra-title1{
+    background-color:rgba(168, 85, 247, 0.6) ;
+    height: 5px;
+    border-radius: 10px;
+    border-style: none;
+    width: 270px;
+}
+
+.description-info{
+    margin-top: 3%;
+}
+
+.links-info{
+margin: 50px;
+display: flex;
+gap: 30px;
+}
+
+.link-GitHub, .link-Indeed, .link-Linkedin, .link-CV{
+    font-family: 'Geist Pixel', sans-serif;
+    background-color: transparent;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    
+
 }
