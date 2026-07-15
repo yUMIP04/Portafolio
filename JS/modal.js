@@ -10,6 +10,7 @@ const contenido_imgen = document.getElementById("visor-imagenes");
 const Proyecto1 = document.querySelector(".one");
 const Proyecto2 = document.querySelector(".two");
 const Proyecto3 = document.querySelector(".three");
+const Proyecto4 = document.querySelector(".four");
 
 const ImagenesDataMVLS = [
     "/assets/img/inicioSesion_MVLS.png", 
@@ -29,6 +30,11 @@ const Lumisa = [
     "/assets/img/LumisaInicioSesion.png", "/assets/img/CotizacionesLumisa.png", "/assets/img/CotizacionLumisa.png",
     "/assets/img/CotizacionLumisa2.png","/assets/img/pdf_Lumisa.png", "/assets/img/pdfLumisa2.png", "/assets/img/HistorialLumisa.png",
     "/assets/img/panel_adminLumisa.png"
+]
+
+const AnalisisDashboard =[
+    "/assets/img/Analisis1.png","/assets/img/Analisis2.png","/assets/img/Analisis3.png","/assets/img/Analisis4.png",
+    "/assets/img/Analisis5.png","/assets/img/Analisis6.png","/assets/img/Analisis7.png"
 ]
 
 let index = 0;
@@ -91,6 +97,7 @@ Abrir_Modal(btn_derecha, btn_izquierda);
 Cierrer_AperturaModal(Proyecto1, Modal, btn_Cerrar);
 Cierrer_AperturaModal(Proyecto2, Modal, btn_Cerrar);
 Cierrer_AperturaModal(Proyecto3, Modal, btn_Cerrar );
+Cierrer_AperturaModal(Proyecto4, Modal, btn_Cerrar);
 
 if(Proyecto1){
     Proyecto1.addEventListener("click", (e) =>{
@@ -112,6 +119,14 @@ if(Proyecto3){
     Proyecto3.addEventListener("click", (e) =>{
         index = 0;
         ImagenesActuales = Lumisa;
+        Recorrer_Imagenes(contenido_imgen);
+    });
+}
+
+if(Proyecto4){
+    Proyecto4.addEventListener("click", (e) =>{
+        index = 0;
+        ImagenesActuales = AnalisisDashboard;
         Recorrer_Imagenes(contenido_imgen);
     });
 }
