@@ -1,7 +1,7 @@
 /*import { useState } from 'react'
 */
 
-import Button from './components/Navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 
 import './App.css'
 
@@ -12,7 +12,7 @@ function App() {
     <>
     
      
-       <Button />
+       <Navbar />
     </>
 
  
