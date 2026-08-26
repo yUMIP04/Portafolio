@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Bungee+Shade&family=Geist+Pixel&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*🌟Titulo */
+.Titulo-seccAboutMe{
+     font-family:'Geist Pixel', sans-serif;
+     margin-top: 6px;
+     margin-bottom: 4px;
+}
+
+/*🌟Barra */
+
+.barra-aboutMe{
+    height: 1vh;
+    background-color:#A855F799 ;
+    width: 15vw;
+    border-radius: 4px;
+}
+
+/*🌟Imagen e informacion */
+
+.IMG-Main{
+    box-shadow: 1px 1px 18px 0px rgba(168, 85, 247, 0.6);
+    width: 18vw;
+    margin-bottom: 16px;
+}
+
+.info{
+     font-family:'Geist Pixel', sans-serif;
+     font-size: 1rem;
+}
+
+.Info-Dev{
+        font-size: 1rem;
+    }
+
+/*🌟Redes Sociales */
+
+.red-social{
+
+    border: 2px;
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    width: 7vw;
+     box-shadow: 1px 1px 10px 0px rgba(168, 85, 247, 0.6);
+     transition: 0.2s ease-in-out;
+     
+}
+
+.red-social:hover{
+    transform: translateY(-10px);
+    color:rgba(168, 85, 247, 0.6) ;
+    background-color: rgba(168, 85, 247, 0.6) ;
+    box-shadow: 1px 1px 15px 0px rgba(168, 85, 247, 0.6);
+}
+
+.red-social a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*🥳RESPONSIVE */
+
+@media (max-width:640px){
+    .info-AboutMe{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .IMG-Main{
+        width: 160px;
+        aspect-ratio: 1 / 1 ;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .info{
+        font-size: 0.7rem;
+    }
+
+    .Info-Dev{
+        font-size: 0.7rem;
+    }
+
+    .red-social{
+        width: 90px;
+
+    }
+}

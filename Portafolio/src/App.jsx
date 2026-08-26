@@ -1,26 +1,21 @@
-/*import { useState } from 'react'
-*/
+import Navbar from './components/Navbar.jsx';
+import AboutMe_Seccion from './components/AboutMe.jsx';
+import Skills_Secc from './components/Skills.jsx';
 
-import Navbar from './components/Navbar.jsx'
-import AboutMe_Seccion from './components/AboutMe.jsx'
-
-import './App.css'
+import './App.css';
 
 function App() {
- 
-
   return (
-    <>
-    
-     
-       <Navbar />
-       <div className='Secciones flex flex-column justify-center '>
-       <AboutMe_Seccion />
-       </div>
-    </>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center">
+      <Navbar />
+      
+      <main className="w-full flex flex-col items-center gap-10">
+        <AboutMe_Seccion />
+        <Skills_Secc/>
 
- 
-  )
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

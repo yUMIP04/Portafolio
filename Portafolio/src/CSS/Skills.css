@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Bungee+Shade&family=Geist+Pixel&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Skills{
+    border: 2px;
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    width: 830px;
+    border-radius: 10px;
+}
+
+.titulo-SKILLS{
+    font-family:'Geist Pixel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Barra-Titulo{
+    
+    height: 7px;
+    background-color: rgba(168, 85, 247, 0.6);
+    border-radius: 10px;
+    border: none;
+    width: 140px;
+}
+
+/*🌟SKILLS FRONTEND */
+
+.Titulo-Fronted{
+    font-family: 'Geist Pixel', sans-serif;
+}
+
+.Skills-frontend{
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 260px;
+    padding: 10px;
+     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
+    
+}
+
+.Skills-front{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 160px 10px;
+    
+}
+
+.Skill-front{
+    margin-left: 10px;
+    font-family:'Geist Pixel', sans-serif ;
+    
+}
+
+/*🌟SKILLS BACKEND */
+.Skills-Backend{
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 260px;
+    padding: 10px;
+     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
+    
+}
+
+/*🌟OTRAS HABILIDADES */
+
+.Others{
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 260px;
+    padding: 10px;
+     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
+    
+}
