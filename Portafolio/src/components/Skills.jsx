@@ -19,6 +19,15 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaNode } from "react-icons/fa6";
 import { SiPlotly } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
+import { FaGithub } from "react-icons/fa6";
+import { IoIosGitBranch } from "react-icons/io";
+import { SiPostman } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { RiNotionFill } from "react-icons/ri";
+import { FaDocker } from "react-icons/fa";
+import { IoLogoFigma } from "react-icons/io5";
+import { FaLinux } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
 
 export default function Skills_Secc(){
 
@@ -85,7 +94,7 @@ export default function Skills_Secc(){
             <div className='Skills-Backend'>
 
                 <div className='Titulo-Fronted' style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
-                    <h1 style={{color:'white'}}>Frontend</h1>
+                    <h1 style={{color:'white'}}>Backend</h1>
                     </div>
                     <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                     <hr className='Barra-Front' style={{ height:'7px', width:'140px', borderRadius:'10px', borderColor:' rgba(168, 85, 247, 0.6)', backgroundColor:' rgba(168, 85, 247, 0.6)'}} />
@@ -167,6 +176,68 @@ export default function Skills_Secc(){
             {/*🌟Otras Habilidades */}
 
             <div className='Others'>
+
+                   <div className='Titulo-Fronted' style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                    <h1 style={{color:'white'}}>Herramientas</h1>
+                    </div>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                    <hr className='Barra-Front' style={{ height:'7px', width:'225px', borderRadius:'10px', borderColor:' rgba(168, 85, 247, 0.6)', backgroundColor:' rgba(168, 85, 247, 0.6)'}} />
+                    </div>
+
+                        <div className="skills-herramientas">
+
+                <div className="skill-herramientas">
+                    <FaGithub className='icon' />
+                    <p> Github</p>
+                </div>
+
+             
+                <div className="skill-herramientas">
+                    <IoIosGitBranch className='icon' />
+                    <p> Git</p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    <SiPostman className='icon' />
+                    <p> Postman </p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    <VscVscode className='icon' />
+                    <p> Vscode </p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    <RiNotionFill className='icon' />
+                    <p> Notion </p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    < FaDocker  className='icon' />
+                    <p> Docker </p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    <IoLogoFigma className='icon' />
+                    <p> Figma </p>
+                </div>
+
+                
+                <div className="skill-herramientas">
+                    < FaLinux className='icon' />
+                    <p> Linux </p>
+                </div>   
+
+                <div className="skill-herramientas">
+                    < DiMsqlServer className='icon' />
+                    <p> sqlServer </p>
+                </div>  
+</div>
 
             </div>
 

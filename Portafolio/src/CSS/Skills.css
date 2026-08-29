@@ -39,14 +39,14 @@
     overflow: hidden;
     width: 260px;
     padding: 10px;
-     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
-    
+     transition: 0.3s ease-in-out;
 }
 
 .Skills-front{
     margin-top: 40px;
     display: grid;
     grid-template-columns: 160px 10px;
+    row-gap: 20px;
     
 }
 
@@ -54,6 +54,10 @@
     margin-left: 10px;
     font-family:'Geist Pixel', sans-serif ;
     
+}
+
+.Skill-front p{
+    font-size: 0.8rem ;
 }
 
 /*🌟SKILLS BACKEND */
@@ -65,7 +69,8 @@
     overflow: hidden;
     width: 260px;
     padding: 10px;
-     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
+     
+      transition: 0.3s ease-in-out;
     
 }
 
@@ -75,7 +80,7 @@
     display: grid;
     grid-template-columns: 89px 84px 19px;
     grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 15px;
+    row-gap: 20px;
     
 }
 
@@ -111,6 +116,48 @@ text-align: center;
     overflow: hidden;
     width: 260px;
     padding: 10px;
-     box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
-    
+    transition: 0.3s ease-in-out;
 }
+
+.skills-herramientas{
+    color: white;
+     margin-top: 40px;
+    display: grid;
+    grid-template-columns: 89px 84px 19px;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+
+}
+
+.skill-herramientas{
+    margin-left: 4px;
+    font-family:'Geist Pixel', sans-serif ;
+}
+
+.skill-herramientas p{
+    font-size: 0.8rem ;
+}
+
+/*🌟 MAS EFECTOS EN LAS CARDS */
+
+.Skills-frontend:hover, .Skills-Backend:hover, .Others:hover{
+transform: translateY(-9px) scaleY(1.1) scaleX(1.1);
+box-shadow: 1px 1px 20px 0px rgba(168, 85, 247, 0.6);
+}
+
+/*🌟 RESPONSIVE */
+
+@media (max-width:640px){
+
+    .Skills{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+
+    .All-Skills{
+        display: flex;
+        flex-direction: column;
+    }
+ }
