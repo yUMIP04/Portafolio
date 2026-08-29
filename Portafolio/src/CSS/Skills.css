@@ -69,6 +69,38 @@
     
 }
 
+.skills-back{
+    color: white;
+  margin-top: 40px;
+    display: grid;
+    grid-template-columns: 89px 84px 19px;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 15px;
+    
+}
+
+.skill-back{
+    margin-left: 10px;
+    font-family:'Geist Pixel', sans-serif ;
+    
+}
+
+.skill-back p{
+    font-size: 0.8rem ;
+}
+
+.icon{
+    font-size: 1.7rem;
+    transition: 0.3s ease-in-out;
+text-align: center;
+}
+
+.icon:hover{
+    transform: translateY(-10px) scaleY(1.5) scaleX(1.5);
+    color:  rgba(168, 85, 247, 0.6);
+    
+}
+
 /*🌟OTRAS HABILIDADES */
 
 .Others{

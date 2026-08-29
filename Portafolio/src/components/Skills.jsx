@@ -6,6 +6,19 @@ import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
+import { DiDjango } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { BiLogoFlask } from "react-icons/bi";
+import { BsFiletypeSql } from "react-icons/bs";
+import { DiMysql } from "react-icons/di";
+import { SiPandas } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { IoLogoElectron } from "react-icons/io5";
+import { IoLogoFirebase } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaNode } from "react-icons/fa6";
+import { SiPlotly } from "react-icons/si";
+import { SiSqlite } from "react-icons/si";
 
 export default function Skills_Secc(){
 
@@ -36,30 +49,30 @@ export default function Skills_Secc(){
                 <div className='Skills-front'>
 
                     <div className='Skill-front' style={{color:'white'}}>
-                        <div className="icono">
-                        <RiTailwindCssFill />
-                        </div>
+                        
+                        <RiTailwindCssFill className='icon' />
+                        
                         <p>TailwindCSS</p>
                     </div>
 
                     <div className='Skill-front' style={{color:'white'}}>
-                        <FaReact />
+                        <FaReact className='icon' />
                         <p>React</p>
                     </div>
 
                     <div className='Skill-front' style={{color:'white'}}>
-                        <FaBootstrap />
+                        <FaBootstrap className='icon' />
                         <p>Bootstrap</p>
                     </div>
 
                     
                     <div className='Skill-front' style={{color:'white'}}>
-                        <FaCss3Alt />
+                        <FaCss3Alt className='icon' />
                         <p>CSS</p>
                     </div>
 
                     <div className='Skill-front' style={{color:'white'}}>
-                        <FaHtml5 />
+                        <FaHtml5 className='icon' />
                         <p>HTML</p>
                     </div>
 
@@ -71,6 +84,84 @@ export default function Skills_Secc(){
 
             <div className='Skills-Backend'>
 
+                <div className='Titulo-Fronted' style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                    <h1 style={{color:'white'}}>Frontend</h1>
+                    </div>
+                    <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                    <hr className='Barra-Front' style={{ height:'7px', width:'140px', borderRadius:'10px', borderColor:' rgba(168, 85, 247, 0.6)', backgroundColor:' rgba(168, 85, 247, 0.6)'}} />
+                    </div>
+
+                    <div className="skills-back">
+
+                <div className="skill-back">
+                    <DiDjango className='icon' />
+                    <p> Django</p>
+                </div>
+
+                <div className="skill-back">
+                   <SiExpress className='icon' />
+                    <p> Express.js </p>
+                </div>
+
+                 <div className="skill-back">
+                  <BiLogoFlask className='icon' />
+                    <p> Flask </p>
+                </div>
+
+                 <div className="skill-back">
+                  <BsFiletypeSql className='icon'/>
+                    <p> SQL </p>
+                </div>
+
+                <div className="skill-back">
+                  <DiMysql className='icon' />
+                    <p> MySQL </p>
+                </div>
+
+                <div className="skill-back">
+                 <SiPandas className='icon' />
+                    <p> Pandas </p>
+                </div>
+
+                
+                <div className="skill-back">
+                 <FaPython className='icon' />
+                    <p> Python </p>
+                </div>
+
+                
+                <div className="skill-back">
+                 <IoLogoElectron className='icon' />
+                    <p> Electron </p>
+                </div>
+
+                
+                <div className="skill-back">
+                 <IoLogoFirebase className='icon' />
+                    <p> Firebase </p>
+                </div>
+
+                <div className="skill-back">
+                 <IoLogoJavascript className='icon' />
+                    <p> JavaScript </p>
+                </div>
+
+                <div className="skill-back">
+                <FaNode className='icon' />
+                    <p> Node.js </p>
+                </div>
+
+                <div className="skill-back">
+                <SiPlotly className='icon' />
+                    <p> Plotly </p>
+                </div>
+
+                <div className="skill-back">
+                <SiSqlite className='icon' />
+                    <p> Sqlite </p>
+                </div>
+
+</div>
             </div>
 
             {/*🌟Otras Habilidades */}
