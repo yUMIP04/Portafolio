@@ -1,0 +1,30 @@
+.modal{
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.75);
+backdrop-filter: blur(8px);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.modal-container{
+    overflow: hidden;
+    border-style: solid;
+    border-color:  rgba(168, 85, 247, 0.6);
+    border-width: 1px;
+    border-radius: 10px;
+    width: 90vw;
+    height: 40vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+

@@ -6,6 +6,7 @@
     border-color:  rgba(168, 85, 247, 0.6);
     width: 830px;
     border-radius: 10px;
+    
 }
 
 .titulo-SKILLS{
@@ -40,6 +41,10 @@
     width: 260px;
     padding: 10px;
      transition: 0.3s ease-in-out;
+       background-color:  rgba(208, 199, 204, 0.1);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
+    
 }
 
 .Skills-front{
@@ -69,6 +74,9 @@
     overflow: hidden;
     width: 260px;
     padding: 10px;
+       background-color:  rgba(208, 199, 204, 0.1);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
      
       transition: 0.3s ease-in-out;
     
@@ -117,6 +125,10 @@ text-align: center;
     width: 260px;
     padding: 10px;
     transition: 0.3s ease-in-out;
+      background-color:  rgba(208, 199, 204, 0.1);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
+  
 }
 
 .skills-herramientas{

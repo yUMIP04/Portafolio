@@ -49,9 +49,9 @@ margin-left: 40px;
     height: 300px;
      transition: 0.3s ease-in-out;
      background-color:  rgba(208, 199, 204, 0.1);
-     backdrop-filter: blur(25px);
+     backdrop-filter: blur(15px);
      -webkit-backdrop-filter: blur(15px);
-     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.3);
 }
 
 .Proyect1:hover{

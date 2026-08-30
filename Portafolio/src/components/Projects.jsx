@@ -1,7 +1,9 @@
 import '../CSS/Projects.css'
 import { FaGithub } from "react-icons/fa6";
+import Modal_Projects from './Modal';
 
 export default function Projects(){
+
 
     return(
 
@@ -18,7 +20,7 @@ export default function Projects(){
 
             <div className="Proyects-show" style={{marginTop:'30px'}}>
             
-            <div className='Proyect1'> 
+            <div className='Proyect1 P1' id='P1'> 
                 <div className="titulo-Proyect" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                 
                 <h1 style={{color:'white', textAlign:'center', fontSize:'1.5rem'}}>MVLS</h1>
