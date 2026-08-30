@@ -31,13 +31,68 @@
 font-family: 'Geist Pixel', sans-serif;
 }
 
+.Proyects-show{
+display: grid;
+grid-template-columns: 390px 10px;
+overflow: hidden;
+margin-left: 40px;
+}
+
 .Proyect1{
  border-style: solid;
     border-color:  rgba(168, 85, 247, 0.6);
     margin-top: 40px;
     border-radius: 10px;
     overflow: hidden;
-    width: 260px;
+    width: 340px;
     padding: 10px;
      transition: 0.3s ease-in-out;
+}
+
+.info-project{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;    
+}
+
+.img{
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-items: center;
+
+}
+
+.IMG-Project{
+    background-image: url(../assets/Projects/MVLS/MVLS-videollamada.png);
+    width: 220px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.parrafo-project{
+    font-family:'Geist Pixel', sans-serif ;
+    font-size: 0.8rem;
+}
+
+.use-skills{
+    margin-top: 10px;
+    color: white;
+display: grid;
+grid-template-columns: 110px 130px 70px;
+row-gap: 15px;
+column-gap: 6px;
+}
+
+.skill{
+    padding: 2px;
+    font-family:'Geist Pixel', sans-serif ;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#4c2866 ;
+    border: 1px solid rgba(168, 85, 247, 0.6);
+    box-shadow: 0 1px 15px rgba(168, 85, 247, 0.5);
 }
