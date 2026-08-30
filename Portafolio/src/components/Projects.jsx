@@ -1,4 +1,5 @@
 import '../CSS/Projects.css'
+import { FaGithub } from "react-icons/fa6";
 
 export default function Projects(){
 
@@ -20,7 +21,7 @@ export default function Projects(){
             <div className='Proyect1'> 
                 <div className="titulo-Proyect" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
                 
-                <h1 style={{color:'white', textAlign:'center'}}>MVLS</h1>
+                <h1 style={{color:'white', textAlign:'center', fontSize:'1.5rem'}}>MVLS</h1>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                 <hr className='Barra-Titulo' />
                 </div>
@@ -33,45 +34,13 @@ export default function Projects(){
             <div className="IMG-Project"></div>
 </div>
 
-<div className="descrip-project">
-    <p style={{color: 'white', textAlign:'center', marginTop:'8px'}} className='parrafo-project'>MVLS es una aplicacion que brinda soporte y mantenimiento en equipo de computo 
-por medio de una videollamada y por un chat en vivo, se debe ingresar con el correo
- y contraseña que registraste en la pagina</p>
+<div className="saber-mas-div">
+    <p className='saber-mas' >Saber mas...</p>
 </div>
 
-<div className="use-skills">
-    <div className="skill">
-        <p className='blur-sm'>electron</p>
-    </div>
 
-    <div className="skill">
-        <p>HTML</p>
-    </div>
-
-    <div className="skill">
-        <p>CSS</p>
-    </div>
-
-    <div className="skill">
-        <p>JavaScript</p>
-    </div>
-
-    <div className="skill">
-        <p>express.js</p>
-    </div>
-
-    <div className="skill">
-        <p>agora</p>
-    </div>
-
-    <div className="skill">
-        <p>webrtc</p>
-    </div>
-
-    <div className="skill">
-        <p>mysql</p>
-    </div>
-
+<div className="link" style={{marginTop:'25px', color:'white', textAlign:'center', fontSize:'3rem'}}>
+    <a href="https://github.com/yUMIP04/MVLS-APLICATTION" style={{color:'white'}}> <FaGithub className='link-repo' /></a>
 </div>
 
             </div>
@@ -82,13 +51,95 @@ por medio de una videollamada y por un chat en vivo, se debe ingresar con el cor
 
     <div className='Proyect1'> 
                 <div className="titulo-Proyect" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                <h1 style={{color:'white', textAlign:'center'}}>MVLS</h1>
+                
+                <h1 style={{color:'white', textAlign:'center', fontSize:'1.2rem'}}>Sistema de Cotizaciones - Consultancy</h1>
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
                 <hr className='Barra-Titulo' />
                 </div>
 
             </div>
+
+            <div className="info-project">
+            
+            <div className="img">
+            <div className="IMG-Project2"></div>
 </div>
+<div className="saber-mas-div" style={{marginBottom:'-15px'}}>
+    <p className='saber-mas' >Saber mas...</p>
+</div>
+
+<div className="link" style={{marginTop:'25px', color:'white', textAlign:'center', fontSize:'3rem'}}>
+    <a href="https://github.com/ganeth/Consultancy" style={{color:'white'}}> <FaGithub className='link-repo' /></a>
+</div>
+
+            </div>
+
+</div>
+
+{/*🌟Proyect 3 */}
+
+    <div className='Proyect1'> 
+                <div className="titulo-Proyect" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                
+                <h1 style={{color:'white', textAlign:'center', fontSize:'1.2rem'}}>
+Sistema de Cotizaciones - Lumisa
+</h1>
+                <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                <hr className='Barra-Titulo' />
+                </div>
+
+            </div>
+
+            <div className="info-project">
+            
+            <div className="img">
+            <div className="IMG-Project3"></div>
+</div>
+
+<div className="saber-mas-div">
+    <p className='saber-mas' >Saber mas...</p>
+</div>
+
+<div className="link" style={{marginTop:'25px', color:'white', textAlign:'center', fontSize:'3rem'}}>
+    <a href="https://github.com/yUMIP04/Sistema-Cotizaciones-LUMISA" style={{color:'white'}}> <FaGithub className='link-repo' /></a>
+</div>
+
+            </div>
+
+</div>
+
+
+{/*🌟Proyect 4 */}
+ <div className='Proyect1'> 
+                <div className="titulo-Proyect" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                
+                <h1 style={{color:'white', textAlign:'center', fontSize:'1.2rem'}}>
+Sistema de Analisis de Dashboard
+</h1>
+                <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
+                <hr className='Barra-Titulo' />
+                </div>
+
+            </div>
+
+            <div className="info-project">
+            
+            <div className="img">
+            <div className="IMG-Project4"></div>
+</div>
+
+<div className="saber-mas-div" >
+    <p className='saber-mas' >Saber mas...</p>
+</div>
+
+<div className="link" style={{marginTop:'25px', color:'white', textAlign:'center', fontSize:'3rem'}}>
+    <a href="https://github.com/yUMIP04/Sistema-de-Ventas-con-Dashboard" style={{color:'white'}}> <FaGithub className='link-repo' /></a>
+</div>
+
+            </div>
+
+</div>
+
 
             </div>
         </div>
