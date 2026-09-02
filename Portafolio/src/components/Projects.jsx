@@ -1,10 +1,9 @@
 import '../CSS/Projects.css'
 import { FaGithub } from "react-icons/fa6";
 import Modal_Projects from './Modal';
+import { useState } from 'react';
 
 export default function Projects(){
-
-
     return(
 
         <div className='Projects' id='proyectos' style={{marginTop:'40px'}}>

@@ -1,6 +1,10 @@
-import '../CSS/Modal.css'
+import '../CSS/Modal.css';
 
-export default function Modal_Projects(){
+
+export default function Modal_Projects({is_open, is_close}){
+
+    if(!is_open) return null;
+   
     return (
         <div className="modal">
             
@@ -11,12 +15,19 @@ export default function Modal_Projects(){
                 </div>
 
                 <div className="info-project">
+
                     <p>dskjdskjdsdjkddjksdkjdsjkd</p>
 
                     <div className="skills">
                         <p>Ninguna por el momento</p>
                     </div>
+
+                    <div className="btn">
+                        <button type='button'>Cerrar</button>
+                    </div>
+
                 </div>
+                
             </div>
         
         </div>

@@ -26,5 +26,27 @@ z-index: 1000;
     justify-content: center;
     align-items: center;
     gap: 220px;
+    font-family: 'Geist Pixel', sans-serif;
 }
 
+.imagen{
+    background-color: rgba(151, 150, 150, 0.15);
+    backdrop-filter: blur(15px);
+    width: 100vw;
+    height: 82vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container{
+    background-color:  rgba(168, 85, 247, 0.15) ;
+}
+
+.info-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
